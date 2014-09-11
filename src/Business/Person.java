@@ -16,6 +16,7 @@ public class Person{
     String lastname;
     String dateofbirth;
     String ssn;
+    Address address;
    
 
     public String getFirstname() {
@@ -50,6 +51,16 @@ public class Person{
         this.ssn = ssn;
     }
 
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
+
+    
 
     
     

@@ -22,15 +22,20 @@ public class ViewPersonJPanel extends javax.swing.JPanel {
         initComponents();
         this.P=P;
         this.address=address;
+        P.setAddress(address);
         firstnameJTextField.setText(P.getFirstname());
         lastnameJTextField.setText(P.getLastname());
         ssnJTextField.setText(String.valueOf(P.getSsn()));
         dobJTextField.setText(P.getDateofbirth());
-        streetJTextField.setText(address.getStreetname());
-        cityJTextField.setText(address.getCity());
-        countryJTextField.setText(address.getCountry());
-        stateJTextField.setText(address.getState());
-        zipcodeJTextField.setText(String.valueOf(address.getZipcode()));
+        firstnameJTextField.setText(P.getFirstname());
+        lastnameJTextField.setText(P.getLastname());
+        ssnJTextField.setText(String.valueOf(P.getSsn()));
+        dobJTextField.setText(P.getDateofbirth());
+        streetJTextField.setText(P.getAddress().getStreetname());
+        cityJTextField.setText(P.getAddress().getCity());
+        countryJTextField.setText(P.getAddress().getCountry());
+        stateJTextField.setText(P.getAddress().getState());
+        zipcodeJTextField.setText(String.valueOf(P.getAddress().getZipcode()));
     }
 
     /**
